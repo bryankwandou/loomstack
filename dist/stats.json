@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-08-02T11:16:24.993Z",
+  "totalLines": 5001816,
+  "totalBytes": 356085247,
+  "avgLineChars": 71.19,
+  "entities": 6048,
+  "linesPerEntity": 827,
+  "shards": 24,
+  "buildSeconds": 167.1
+}
