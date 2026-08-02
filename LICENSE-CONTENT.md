@@ -34,9 +34,10 @@ CC BY-NC-ND is the line between the two.
 
 Priority is established by, in order of strength:
 
-1. Signed git commits and their timestamps in this repository.
+1. Git commit timestamps in this repository, held on GitHub's servers rather
+   than ours.
 2. `dist/SHA256SUMS`, regenerable byte-for-byte by anyone via `npm run build`.
-3. The OpenTimestamps proof committed alongside each tagged release.
+3. The release tag and the digest of its attached bundle.
 
 ## Commercial licensing
 
