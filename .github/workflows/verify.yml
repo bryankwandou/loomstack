@@ -1,0 +1,34 @@
+name: verify
+
+# Recounts the corpus on every push. A green tick here is a third party
+# confirming the line count, on hardware nobody involved in this repository
+# controls. That is the whole point of running it in CI.
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  recount:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Recount shards and check digests
+        run: npm run verify
+
+      - name: Rebuild from the grammar and confirm the bytes are identical
+        run: |
+          cp dist/SHA256SUMS /tmp/committed.sums
+          npm run build
+          diff /tmp/committed.sums dist/SHA256SUMS
+          echo "regenerated corpus is byte-identical to the committed one"
+
+      - name: Confirm the router resolves a slice
+        run: npm run route -- --entity payments.ledger.ledger_transfer --sections api --budget 200 | tee /tmp/pack.md
