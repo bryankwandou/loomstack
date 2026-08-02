@@ -1,0 +1,5 @@
+# Line endings are part of the record. A CRLF conversion on checkout would add
+# one byte per line, which on five million lines shifts every digest and breaks
+# `npm run verify` for anyone who clones on Windows. Nothing here is converted.
+* -text
+dist/** -text
