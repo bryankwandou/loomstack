@@ -1,0 +1,15 @@
+{
+  "name": "loomstack",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A spec compiler that weaves millions of addressable spec lines into context packs an agent can actually build from.",
+  "license": "Apache-2.0",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node packages/compiler/src/build.mjs",
+    "verify": "node packages/compiler/src/verify.mjs",
+    "route": "node packages/compiler/src/route.mjs",
+    "bundle": "node scripts/bundle.mjs"
+  }
+}

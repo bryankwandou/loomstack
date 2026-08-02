@@ -1,0 +1,7 @@
+node_modules/
+.next/
+.vercel/
+.probe/
+release/
+*.log
+.DS_Store
