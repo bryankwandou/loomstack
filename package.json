@@ -5,11 +5,19 @@
   "type": "module",
   "description": "A spec compiler that weaves millions of addressable spec lines into context packs an agent can actually build from.",
   "license": "Apache-2.0",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "node packages/compiler/src/build.mjs",
     "verify": "node packages/compiler/src/verify.mjs",
     "route": "node packages/compiler/src/route.mjs",
+    "audit": "node --max-old-space-size=6144 packages/compiler/src/audit.mjs",
+    "ddl": "node packages/compiler/src/ddl.mjs --modules core --out db/schema.sql",
+    "migrate": "node scripts/migrate.mjs",
     "bundle": "node scripts/bundle.mjs"
+  },
+  "dependencies": {
+    "pg": "^8.22.0"
   }
 }

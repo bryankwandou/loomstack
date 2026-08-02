@@ -49,9 +49,9 @@ export function expandEntity(domain, moduleId, entity, seq) {
   for (let i = 0; i < STATES.length; i += 1) {
     const from = STATES[i];
     const to = pick(STATES, i + 1);
-    push(`- transition ${from} -> ${to} guard=${moduleId}_guard_${i} actor=${pick(ROLES, i)}`);
-    push(`- transition ${from} -> closed guard=force_close actor=owner audit=required`);
-    push(`- terminal ${from}=${['closed', 'purged', 'expired'].includes(from) ? 'yes' : 'no'}`);
+    push(`- ${ref} transition ${from} -> ${to} guard=${moduleId}_guard_${i} actor=${pick(ROLES, i)}`);
+    push(`- ${ref} transition ${from} -> closed guard=force_close actor=owner audit=required`);
+    push(`- ${ref} terminal ${from}=${['closed', 'purged', 'expired'].includes(from) ? 'yes' : 'no'}`);
   }
 
   push(`#### rbac`);
@@ -84,7 +84,9 @@ export function expandEntity(domain, moduleId, entity, seq) {
 
   push(`#### errors`);
   for (let i = 0; i < 40; i += 1) {
-    push(`- ${domain.id.toUpperCase()}_${moduleId.toUpperCase()}_${String(i).padStart(3, '0')} :: ${pick(['invalid_input', 'not_found', 'conflict', 'forbidden', 'rate_limited', 'upstream_down', 'stale_version', 'quota_exceeded'], i)} retryable=${i % 3 === 0}`);
+    // Error codes are entity scoped, not module scoped. Two entities sharing a
+    // code is a defect in the spec, not a shortcut.
+    push(`- ${entity.toUpperCase()}_${String(i).padStart(3, '0')} on ${ref} :: ${pick(['invalid_input', 'not_found', 'conflict', 'forbidden', 'rate_limited', 'upstream_down', 'stale_version', 'quota_exceeded'], i)} retryable=${i % 3 === 0}`);
   }
 
   push(`#### events`);

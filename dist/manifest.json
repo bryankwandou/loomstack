@@ -1,183 +1,183 @@
 {
   "version": 1,
   "stats": {
-    "generatedAt": "2026-08-02T11:16:24.993Z",
+    "generatedAt": "2026-08-02T16:18:08.671Z",
     "totalLines": 5001816,
-    "totalBytes": 356085247,
-    "avgLineChars": 71.19,
+    "totalBytes": 370340527,
+    "avgLineChars": 74.04,
     "entities": 6048,
     "linesPerEntity": 827,
     "shards": 24,
-    "buildSeconds": 167.1
+    "buildSeconds": 212.8
   },
   "shards": [
     {
       "file": "01-commerce.md",
       "domain": "commerce",
       "lines": 208409,
-      "bytes": 15060662,
-      "sha256": "98b96716f4490341707d483360ce2c8ee58bf8e0d69ba8ffa192ec7e7de7809d"
+      "bytes": 15662822,
+      "sha256": "d7251af7e1e030d3b26f2cc98f519ef629a7e7bee8d1f3873eb423175b43bfa5"
     },
     {
       "file": "02-payments.md",
       "domain": "payments",
       "lines": 208409,
-      "bytes": 15061043,
-      "sha256": "7eae541b70571b29e06fc5e98403bec8edf019b428eb715242e6a1b1d91449ed"
+      "bytes": 15663203,
+      "sha256": "b4cb37f5fb842bbe51a68236b08df1252708d40c8e4d28bf5fc9b183af74ec20"
     },
     {
       "file": "03-logistics.md",
       "domain": "logistics",
       "lines": 208409,
-      "bytes": 15267382,
-      "sha256": "4d94140ce1f96a740c970fd2952e564fa0893b93b3c1c5c6efdf811c4322d0a0"
+      "bytes": 15877102,
+      "sha256": "2332e179d43a8503c905fa52bdf63b6fb3aaab32aff491234aabf5206668cbdf"
     },
     {
       "file": "04-mobility.md",
       "domain": "mobility",
       "lines": 208409,
-      "bytes": 15059991,
-      "sha256": "780bf56e38d6650a8c709a6ab33349e553aae148e49ca1f58bdfab94043d4844"
+      "bytes": 15662151,
+      "sha256": "d487142e1fbcf958e805b65333fc54a9a8d821f64c526ec9bc1e9a3ec585a1d6"
     },
     {
       "file": "05-social.md",
       "domain": "social",
       "lines": 208409,
-      "bytes": 14647250,
-      "sha256": "1daedb684138efc31f3bc45b4a84cc8d67346497bef88e13eb5699b5a2a3bc49"
+      "bytes": 15234290,
+      "sha256": "ac18b5f05ac6ed2ef4d20a00be74ecb8e78dad9a1b8133272636b95f9970a77d"
     },
     {
       "file": "06-video.md",
       "domain": "video",
       "lines": 208409,
-      "bytes": 14441358,
-      "sha256": "2d1bb1bc72889c67a4a9e9e541ececbf6179e0e8233b1282a71e38c9ea565f77"
+      "bytes": 15020838,
+      "sha256": "28eabebb2ea4d127459ce50cd0191b767d98349919646a9e95ca48afd78eb990"
     },
     {
       "file": "07-creator.md",
       "domain": "creator",
       "lines": 208409,
-      "bytes": 14853578,
-      "sha256": "71c000adbf6decb51983c1d542026e0a288243d18141ffae90d0417c3652ef73"
+      "bytes": 15448178,
+      "sha256": "047aeb44c65a4db55ec59056452c439ad78e3f225bac8a477198963574cde2f1"
     },
     {
       "file": "08-ads.md",
       "domain": "ads",
       "lines": 208409,
-      "bytes": 14027820,
-      "sha256": "bccacc18e0f46fad30fb9a50ce4ce0e1f1a849e527a5e70f14f44116bd0fc0b7"
+      "bytes": 14592180,
+      "sha256": "0a04852a88fee41d2f05a3e9d60ee39755732c3ca9d8bc04730555f2d42f81a1"
     },
     {
       "file": "09-lending.md",
       "domain": "lending",
       "lines": 208409,
-      "bytes": 14854901,
-      "sha256": "db2b1bd0dd973db214531b8b3d4674305c91a943d55f857a68f3fbc56785038c"
+      "bytes": 15449501,
+      "sha256": "6b31c372e66727dea4e965138cd226fdbfd9467035a3fa0f903b1b5723240d4d"
     },
     {
       "file": "10-wealth.md",
       "domain": "wealth",
       "lines": 208409,
-      "bytes": 14646939,
-      "sha256": "e22ea514c01d92500db460fa1678074adf85a36f21ea962ae7cf234e9bc1aa51"
+      "bytes": 15233979,
+      "sha256": "419a3ee751daf59d06cf566f3bef493bab7a4933abcbbf4f519b3055568fa2ba"
     },
     {
       "file": "11-insurance.md",
       "domain": "insurance",
       "lines": 208409,
-      "bytes": 15265893,
-      "sha256": "d8b856571e771b25b1f3439f16ce3c83994126a12741ada5fea5f977276cbbc2"
+      "bytes": 15875613,
+      "sha256": "96c8066f1a36cdfcb3373d6fc87caf4ab5c372a689bc2f7bb1ec2fe4551399b1"
     },
     {
       "file": "12-identity.md",
       "domain": "identity",
       "lines": 208409,
-      "bytes": 15061043,
-      "sha256": "295009195f2bafc1981e719493dc02225c3fba45a12d488cec7f36a7928213fa"
+      "bytes": 15663203,
+      "sha256": "b2d16dc4ddccd62c3bd8559f2c307bb8efdcc07690ac3a7a8ff0fa893337d1f5"
     },
     {
       "file": "13-messaging.md",
       "domain": "messaging",
       "lines": 208409,
-      "bytes": 15267129,
-      "sha256": "7b49ea36a905e2f667b11a43871944c9101a2e095f8c9864cc616ee74fda0528"
+      "bytes": 15876849,
+      "sha256": "525fcdd71081494a945ed8d22ffc715101d9faf3069fb0c8443ce8f2dd564205"
     },
     {
       "file": "14-search.md",
       "domain": "search",
       "lines": 208409,
-      "bytes": 14646194,
-      "sha256": "a2206ca886e7b67c519a2b22947da7009b6ab429a846fbac7fc54b71d4f9953f"
+      "bytes": 15233234,
+      "sha256": "3bd5f3d3521ea2c7a1f73f16f50dc2df2d6e24cba85279fafd6e25ae42925467"
     },
     {
       "file": "15-recsys.md",
       "domain": "recsys",
       "lines": 208409,
-      "bytes": 14649022,
-      "sha256": "702d3af657cf761bd1fbf43c173fa520f31ed713b49452575c3cadb1247f802f"
+      "bytes": 15236062,
+      "sha256": "4b707c8adc002389f27413b470cf44d704389af818d255552846855c21169852"
     },
     {
       "file": "16-travel.md",
       "domain": "travel",
       "lines": 208409,
-      "bytes": 14647241,
-      "sha256": "6f180b9bffed6095fc2cdfe962e464b6f135d493e41bdd11f68fccb33bbab6e2"
+      "bytes": 15234281,
+      "sha256": "29234c51b7bee44f581d1ec94df1e7f540f778966b59be3b8b50a7ece9b9e691"
     },
     {
       "file": "17-food.md",
       "domain": "food",
       "lines": 208409,
-      "bytes": 14234162,
-      "sha256": "1805f9acb09663a1844452ba8e700647d77804e87f3e1e7db90bd8a849ca20ba"
+      "bytes": 14806082,
+      "sha256": "c29ac62c636b95a8bffc21223fd584b5d59e21d72d38cdd33497f829cc10a939"
     },
     {
       "file": "18-health.md",
       "domain": "health",
       "lines": 208409,
-      "bytes": 14646732,
-      "sha256": "5dc85b7b305648481ca412308e0c96f5c8dea1ebce76bfe2916cdff4e914649a"
+      "bytes": 15233772,
+      "sha256": "e77d009d3e43cf9444690f3e547051100a3ff4d695d8465abefe300ca2d01055"
     },
     {
       "file": "19-education.md",
       "domain": "education",
       "lines": 208409,
-      "bytes": 15267172,
-      "sha256": "70b9fea8ab502da9b63e08639eae728a93112eda88eda3f2e163c243b4c78b97"
+      "bytes": 15876892,
+      "sha256": "552aaecd0b60dba8bc6e097e4be5c9802d81a358ae036289f6e72196aa96226c"
     },
     {
       "file": "20-gaming.md",
       "domain": "gaming",
       "lines": 208409,
-      "bytes": 14648963,
-      "sha256": "cf39b9198d0d7d8ff3f2de64a967431215d73e1f62593c511ec2c23a970d5372"
+      "bytes": 15236003,
+      "sha256": "ebf9d4a430b3e94e27605fd049434966f331c23ffdc6919309357054ec213014"
     },
     {
       "file": "21-cloud.md",
       "domain": "cloud",
       "lines": 208409,
-      "bytes": 14440847,
-      "sha256": "236e4480fa0057b6e26e6fd5fccd40b7e963037a1a91b9f6f4b3cc5000b2d746"
+      "bytes": 15020327,
+      "sha256": "2be8c47267b53daa304edb6e873a3cd1bac6bf31b0fd8fb1294b04148580147f"
     },
     {
       "file": "22-devtools.md",
       "domain": "devtools",
       "lines": 208409,
-      "bytes": 15060790,
-      "sha256": "e253a0773999b0c43651c1c9546ed2ca7508671613865169bb8c7fca72ccde0b"
+      "bytes": 15662950,
+      "sha256": "fe0948effc56a344b1df5b5e0920da3e2d999efdb467a40edee455e16596cfd4"
     },
     {
       "file": "23-support.md",
       "domain": "support",
       "lines": 208409,
-      "bytes": 14853088,
-      "sha256": "b86f3c9019435eef97061f9cb69d16aea430ba65c789d6b19e426cc850c2a92f"
+      "bytes": 15447688,
+      "sha256": "246b476882e85941b194675f3c354afae377146f794b369fef6eca5ae599232d"
     },
     {
       "file": "24-compliance.md",
       "domain": "compliance",
       "lines": 208409,
-      "bytes": 15476047,
-      "sha256": "33f3eead752a87909b941fc65ac77136150cbdd8bd21cd6d781ecc8abcf973a6"
+      "bytes": 16093327,
+      "sha256": "550d3ee704c11c73c7da0dd396db5d23c6238c69b11a2aca53976b15a3a57439"
     }
   ]
 }

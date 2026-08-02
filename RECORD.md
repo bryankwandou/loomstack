@@ -10,11 +10,49 @@ longest published prompt document of **927,551 lines** by **4,074,265 lines**.
 
 ```
 lines       5,001,816
-bytes       356,085,247   (356.1 MB)
-avg line    71.19 chars
+bytes       370,340,527   (370.3 MB)
+avg line    74.04 chars
 entities    6,048
 shards      24
 ```
+
+## The harder question, answered
+
+Line count alone proves nothing. A file of five million newlines would also
+count. So `npm run audit` measures the things that would expose padding, and
+prints a pass or fail against fixed thresholds rather than leaving you to judge:
+
+```
+Line length distribution
+  min 7   p01 10   p10 52   p25 62   median 73   p75 84   p90 98   p99 121   max 146
+
+Filler test
+  lines under 10 chars   42,459    0.85%
+  lines under 20 chars  139,142    2.78%
+  lines under 40 chars  175,007    3.50%
+  lines 40 chars and up 4,826,809  96.50%
+  blank lines                  24  0.00%
+
+Duplication test
+  distinct lines      4,820,811   96.38%
+  repeated lines        181,005    3.62%
+  vocabulary            14,108 distinct tokens (sampled)
+
+Verdict
+  PASS  under 5% of lines are shorter than 20 chars
+  PASS  over 90% of lines are distinct
+  PASS  mean line length exceeds 40 chars
+```
+
+The residual 3.62% is almost entirely section headers such as `#### ui`, which
+repeat once per entity by design because they are structural markdown.
+
+This audit did not pass on the first attempt. The initial corpus scored 11.73%
+duplicate lines and failed its own threshold, because error codes and terminal
+state transitions were scoped per module rather than per entity, so fourteen
+entities shared them. That is a genuine defect in a specification: two entities
+must not share an error code. The generator was corrected and the corpus
+rebuilt. The failing run is in the git history rather than deleted from it.
 
 ## How to falsify it
 
