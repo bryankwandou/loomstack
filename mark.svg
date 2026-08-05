@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Loomstack">
+  <title>Loomstack</title>
+  <defs>
+    <linearGradient id="warp" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7C5CFF"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="weft" x1="6" y1="56" x2="58" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F0F3FF" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#A8B4E8" stop-opacity=".95"/>
+    </linearGradient>
+    <mask id="cut">
+      <rect width="64" height="64" fill="#fff"/>
+      <!-- notches carve the over/under crossings so the weave reads as interlaced -->
+      <rect x="19" y="19" width="10" height="6" rx="3" fill="#000"/>
+      <rect x="35" y="27" width="10" height="6" rx="3" fill="#000"/>
+      <rect x="19" y="35" width="10" height="6" rx="3" fill="#000"/>
+      <rect x="35" y="43" width="10" height="6" rx="3" fill="#000"/>
+    </mask>
+  </defs>
+
+  <!-- warp: the vertical spec strands, one per stack layer -->
+  <g fill="url(#warp)">
+    <rect x="19" y="8" width="6" height="48" rx="3"/>
+    <rect x="29" y="8" width="6" height="48" rx="3"/>
+    <rect x="39" y="8" width="6" height="48" rx="3"/>
+  </g>
+
+  <!-- weft: the horizontal passes that bind the strands into one fabric -->
+  <g fill="url(#weft)" mask="url(#cut)">
+    <rect x="8" y="19" width="48" height="6" rx="3"/>
+    <rect x="8" y="27" width="48" height="6" rx="3"/>
+    <rect x="8" y="35" width="48" height="6" rx="3"/>
+    <rect x="8" y="43" width="48" height="6" rx="3"/>
+  </g>
+</svg>
