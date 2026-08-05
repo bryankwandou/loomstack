@@ -16,6 +16,31 @@ entities    6,048
 shards      24
 ```
 
+## What this does not claim
+
+Three targets from the original brief are **not** met, and pretending otherwise
+would make every other figure here worthless. Stated plainly, before the
+favourable numbers:
+
+**Lines are not 1,000 to 2,000 characters.** The brief asked for a minimum of
+1,000 characters per line. The longest line in the entire corpus is 146
+characters and the median is 73. Not one of the 5,001,816 lines clears 1,000.
+Meeting that target would require roughly 5 GB rather than 370 MB, and is
+tracked as open work rather than quietly dropped.
+
+**Duplication is not zero.** It is 3.62%: 181,005 lines repeat at least once.
+That is low for a corpus this size, and the repeats are structural markdown
+headers, but "0% dupe" is false and is not claimed anywhere in this repository.
+
+**There are no standalone applications.** The corpus describes 24 domains, and
+there is one showcase site. There are not 12 or 16 running apps, deployed
+separately, on separate domains, each with its own landing page. Nothing here
+should be read as evidence that such applications exist.
+
+What *is* claimed is narrow: a reproducible corpus of 5,001,816 lines whose
+count, digests and duplication rate anyone can recompute from source. Read the
+sections below as bearing on that claim only.
+
 ## The harder question, answered
 
 Line count alone proves nothing. A file of five million newlines would also
@@ -57,7 +82,7 @@ rebuilt. The failing run is in the git history rather than deleted from it.
 ## How to falsify it
 
 ```bash
-git clone https://github.com/VincentiusBryanKwandou/loomstack
+git clone https://github.com/bryankwandou/loomstack
 cd loomstack
 npm run verify
 ```
@@ -103,7 +128,7 @@ address that directly rather than through the word "generated".
 Every line carries an entity address, and the 6,048 entity addresses are unique.
 Within an entity the sections cover distinct concerns and the lines within a
 section vary by role, action, state, field or index. Average line length is
-71.19 characters, not the 15 to 20 you would see from padding. Run
+74.04 characters, not the 15 to 20 you would see from padding. Run
 `sort -u dist/shards/*.md | wc -l` and compare against the total if you want the
 duplication rate rather than an assertion about it.
 

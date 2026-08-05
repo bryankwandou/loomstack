@@ -10,19 +10,26 @@
 
 ```
 lines       5,001,816
-bytes       356,085,247  (356.1 MB)
-avg line    71.19 chars
+bytes       370,340,527  (370.3 MB)
+avg line    74.04 chars
 entities    6,048
 shards      24
 digests     all match
 ```
+
+Three things this repository does **not** deliver, stated here rather than
+left for a reader to discover: lines are 73 characters at the median and 146 at
+the longest, so the original brief's 1,000 character minimum is unmet; the
+duplication rate is 3.62%, not zero; and there are no standalone applications
+deployed on separate domains, only this corpus and one showcase site.
+[RECORD.md](RECORD.md) carries the full accounting.
 
 The previous longest published prompt document sits at 927,551 lines. Loomstack
 clears that by a margin of roughly 4.07 million lines. Do not take that on
 trust. Clone the repository and recount it yourself:
 
 ```bash
-git clone https://github.com/VincentiusBryanKwandou/loomstack
+git clone https://github.com/bryankwandou/loomstack
 cd loomstack
 npm run verify
 ```

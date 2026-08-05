@@ -5,7 +5,7 @@ import RouterDemo from '@/components/RouterDemo';
 import Reveal from '@/components/Reveal';
 import manifest from '@/data/manifest.json';
 
-const REPO = 'https://github.com/VincentiusBryanKwandou/loomstack';
+const REPO = 'https://github.com/bryankwandou/loomstack';
 const PRIOR = 927551;
 const stats = manifest.stats;
 
@@ -404,7 +404,7 @@ function Foot() {
           {stats.totalLines.toLocaleString('en-US')} lines · {stats.shards} shards · built {stats.generatedAt.slice(0, 10)}
         </span>
         <a href={REPO} className="ml-auto text-[13px] text-mist transition-colors hover:text-white">
-          github.com/VincentiusBryanKwandou/loomstack
+          github.com/bryankwandou/loomstack
         </a>
       </div>
     </footer>
